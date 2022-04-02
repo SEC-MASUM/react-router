@@ -11,13 +11,16 @@ const Header = () => {
               <div className="sm:flex sm:items-center ">
                 <CustomLink to="/">Home</CustomLink>
                 <CustomLink to="/friends">Friends</CustomLink>
+                <CustomLink to="/posts">Posts</CustomLink>
                 <CustomLink to="/about">About</CustomLink>
               </div>
             </div>
           </div>
         </div>
       </nav>
-      <h1 className="text-3xl font-medium">Welcome to my fancy Routing Website!!!</h1>
+      <h1 className="text-3xl font-medium">
+        Welcome to my fancy Routing Website!!!
+      </h1>
     </div>
   );
 };

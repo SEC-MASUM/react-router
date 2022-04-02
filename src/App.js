@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Friends from "./components/Friends/Friends";
 import About from "./components/About/About";
-import NotFound from "./NotFound";
+import NotFound from "./components/NotFound/NotFound";
 import Header from "./components/Header/Header";
 
 function App() {

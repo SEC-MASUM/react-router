@@ -1,38 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import CustomLink from "../CustomLink/CustomLink";
 
 const Header = () => {
   return (
     <div>
-      <nav class="bg-gray-100 font-sans w-full m-0">
-        <div class="bg-white shadow">
-          <div class="container max-w-7xl mx-auto px-4">
-            <div class="flex items-center justify-between py-4">
-              <div class="sm:flex sm:items-center">
-                <Link
-                  to="/"
-                  class="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4"
-                >
-                  Home
-                </Link>
-                <Link
-                  to="/friends"
-                  class="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4"
-                >
-                  Friends
-                </Link>
-                <Link
-                  to="/about"
-                  class="text-gray-800 text-sm font-semibold hover:text-purple-600"
-                >
-                  About
-                </Link>
+      <nav className="bg-gray-100 font-sans w-full m-0">
+        <div className="bg-white shadow">
+          <div className="container max-w-7xl mx-auto px-4">
+            <div className="flex items-center justify-between py-4">
+              <div className="sm:flex sm:items-center ">
+                <CustomLink to="/">Home</CustomLink>
+                <CustomLink to="/friends">Friends</CustomLink>
+                <CustomLink to="/about">About</CustomLink>
               </div>
             </div>
           </div>
         </div>
       </nav>
-      <h1>Welcome to my fancy Routing Website!!!</h1>
+      <h1 className="text-3xl font-medium">Welcome to my fancy Routing Website!!!</h1>
     </div>
   );
 };

@@ -16,9 +16,11 @@ const Friends = () => {
       <p>
         <small>Parle kicu tk dhar dish...:{friends.length}</small>
       </p>
-      {friends.map((friend) => (
-        <Friend key={friend.id} friend={friend}></Friend>
-      ))}
+      <div className="grid grid-cols-3 gap-6 max-w-7xl mx-auto my-10 justify-center p-5">
+        {friends.map((friend) => (
+          <Friend key={friend.id} friend={friend}></Friend>
+        ))}
+      </div>
     </div>
   );
 };

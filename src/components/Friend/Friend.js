@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Friend = ({ friend }) => {
   const { name, username, id } = friend;
@@ -13,6 +13,12 @@ const Friend = ({ friend }) => {
   return (
     <div className="bg-neutral-100 rounded shadow-md p-3">
       <h2 className="font-medium text-2xl">{name}</h2>
+      <Link
+        className="text-indigo-600 underline rounded-md px-3 py-1 mt-3"
+        to={"/friend/" + id}
+      >
+        Details
+      </Link>
       <button
         onClick={showFriendDetails}
         className="bg-indigo-500 border-2 border-indigo-700 text-white rounded-md px-3 py-1 mt-3"

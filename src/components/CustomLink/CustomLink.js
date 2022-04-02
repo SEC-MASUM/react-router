@@ -7,8 +7,8 @@ const CustomLink = ({ children, to, ...props }) => {
   return (
     <div>
       <Link
-        className=" text-sm font-semibold mr-4 hover:text-base transform duration-200"
-        style={{ color: match ? "rgb(147 51 234)" : "rgb(31 41 55)" }}
+        className=" text-sm font-semibold mr-4 hover:text-fuchsia-500 focus:text-purple-600 transform duration-200"
+        // style={{ color: match ? "rgb(147 51 234)" : "rgb(31 41 55)" }}
         to={to}
         {...props}
       >
